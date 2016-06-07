@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<style>html, body { height: 100%; }</style>
+  <div id="myDiv" style="width: 100%; height: 100%"></div>
+
+  <!-- Latest compiled and minified plotly.js JavaScript -->
+  <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <script>
+  var data = [
+    {
+      x: [-886, -719],
+      y: [-4785, -5192],
+      z: [527, 501],
+      type: 'scatter3d'
+    },
+    {
+      x: [-1782, -92],
+      y: [1740, -5172],
+      z: [18, 252],
+      type: 'scatter3d'
+    },
+    {
+      x: [3844, -450],
+      y: [35, -5185],
+      z: [20, 219],
+      type: 'scatter3d'
+    },
+    {
+      x: [2770, 761],
+      y: [2360, -5122],
+      z: [246, 96],
+      type: 'scatter3d'
+    },
+    {
+      x: [3800, 546],
+      y: [-3419, -5215],
+      z: [57, 311],
+      type: 'scatter3d'
+    },
+    {
+      x: [-340, 775],
+      y: [-3893, -5189],
+      z: [573, 135],
+      type: 'scatter3d'
+    },
+    {
+      x: [-3141, -41],
+      y: [3677, -5205],
+      z: [18, 383],
+      type: 'scatter3d'
+    },
+    {
+      x: [19, -546],
+      y: [261, -5181],
+      z: [74, 93],
+      type: 'scatter3d'
+    },
+    {
+      x: [3, 789],
+      y: [394, -5165],
+      z: [112, 421],
+      type: 'scatter3d'
+    }
+  ];
+  var layout = {
+    // height: 700,
+    // width: 700,
+    xaxis: {
+      range: [-5000, 5000]
+    },
+    yaxis: {
+      range: [-5000, 5000]
+    }
+  };
+  Plotly.newPlot('myDiv', data, layout);
+  </script>
+</body>
+</html>
